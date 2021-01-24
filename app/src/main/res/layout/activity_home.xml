@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/brown_light"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indonesia"
+            android:gravity="center"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/brown_dark"
+            />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="307120"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/brown_dark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_case"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/brown_dark"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/brown_bright"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:id="@+id/tv_positive"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="63247"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/brown_dark"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/positive"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/brown_bright"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:id="@+id/tv_recovered"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="232593"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/brown_dark"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recovered"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/brown_bright"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:id="@+id/tv_death"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="11253"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/brown_dark"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/death"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background ="@color/brown"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/province_list"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/brown_dark"
+                />
+
+            <TextView
+                android:id="@+id/tv_see_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all"
+                android:textSize="18sp"
+                android:textColor="@color/brown_dark"
+                android:gravity="end"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_provinces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:listitem="@layout/province_item"
+            tools:itemCount="3"
+            />
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        />
+</RelativeLayout>

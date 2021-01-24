@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Covid Tracker</string>
+    <string name="death">Death</string>
+    <string name="recovered">Recovered</string>
+    <string name="positive">Positive</string>
+    <string name="indonesia">INDONESIA</string>
+    <string name="total_case">Total Case</string>
+    <string name="province_list">Province List</string>
+    <string name="see_all">See All</string>
+</resources>
