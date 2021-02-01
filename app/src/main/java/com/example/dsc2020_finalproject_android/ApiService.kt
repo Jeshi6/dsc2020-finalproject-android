@@ -7,7 +7,7 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("api/")
+    @GET("https://covid19.mathdro.id/api/countries/IDN")
     fun getTotal() : Call<TotalResponse>
 
     @GET("api/provinsi")

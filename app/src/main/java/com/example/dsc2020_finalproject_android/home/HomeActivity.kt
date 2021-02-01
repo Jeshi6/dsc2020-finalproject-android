@@ -57,10 +57,15 @@ class HomeActivity : AppCompatActivity() {
                 ll_data.visibility = View.VISIBLE
                 if(response.isSuccessful){
                     val data = response?.body()
-                    tv_death?.text = data?.meninggal.toString()
-                    tv_positive?.text = data?.perawatan.toString()
-                    tv_recovered?.text = data?.sembuh.toString()
-                    tv_total?.text = data?.jumlahKasus.toString()
+                    val d = data?.deaths?.value
+                    val c = data?.confirmed?.value
+                    val r = data?.recovered?.value
+                    tv_death?.text = d.toString()
+                    tv_positive?.text = c.toString()
+                    tv_recovered?.text = r.toString()
+                    if (d != null && c!=null && r!=null) {
+                        tv_total?.text = (d+c+r).toString()
+                    }
 
                     adapter = ProvinceAdapter(provinces)
 
